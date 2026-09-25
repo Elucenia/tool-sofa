@@ -1,0 +1,275 @@
+{
+  "tool": {
+    "id": "sofa",
+    "title": "Escore SOFA",
+    "short": "Disfunção orgânica na sepse e na UTI",
+    "desc": "Calcule o escore SOFA (Sequential Organ Failure Assessment) pelos seis sistemas orgânicos, com a definição de disfunção orgânica da Sepsis-3.",
+    "lead": "Quantifica a disfunção de seis sistemas orgânicos (respiratório, coagulação, fígado, cardiovascular, neurológico e renal). É a base da definição de sepse (Sepsis-3) e acompanha a evolução do paciente crítico.",
+    "spec": [
+      "medicina-intensiva",
+      "medicina-de-emergencia",
+      "infectologia",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "pao2",
+        "PaO₂",
+        "num",
+        {
+          "min": 20,
+          "max": 700,
+          "unit": "mmHg",
+          "ph": "80"
+        }
+      ],
+      [
+        "fio2",
+        "FiO₂",
+        "num",
+        {
+          "min": 21,
+          "max": 100,
+          "unit": "%",
+          "ph": "40"
+        }
+      ],
+      [
+        "suporte",
+        "Em ventilação mecânica ou suporte ventilatório?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "plaq",
+        "Plaquetas",
+        "num",
+        {
+          "min": 1,
+          "max": 1500,
+          "unit": "×10³/µL",
+          "ph": "150"
+        }
+      ],
+      [
+        "bili",
+        "Bilirrubina total",
+        "num",
+        {
+          "min": 0.1,
+          "max": 50,
+          "step": 0.1,
+          "unit": "mg/dL",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "cv",
+        "Cardiovascular (doses em mcg/kg/min por ≥ 1 h)",
+        "sel",
+        {
+          "opts": {
+            "0": "PAM ≥ 70 mmHg, sem vasopressor",
+            "1": "PAM &lt; 70 mmHg",
+            "2": "Dopamina ≤ 5 ou dobutamina (qualquer dose)",
+            "3": "Dopamina &gt; 5, adrenalina ≤ 0,1 ou noradrenalina ≤ 0,1",
+            "4": "Dopamina &gt; 15, adrenalina &gt; 0,1 ou noradrenalina &gt; 0,1"
+          }
+        }
+      ],
+      [
+        "gcs",
+        "Escala de Coma de Glasgow",
+        "num",
+        {
+          "min": 3,
+          "max": 15,
+          "ph": "15"
+        }
+      ],
+      [
+        "cr",
+        "Creatinina",
+        "num",
+        {
+          "min": 0.1,
+          "max": 20,
+          "step": 0.1,
+          "unit": "mg/dL",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "diurese",
+        "Diurese em 24 h",
+        "num",
+        {
+          "min": 0,
+          "max": 10000,
+          "unit": "mL/dia",
+          "ph": "1500",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>Cada sistema pontua de 0 a 4; o total vai de 0 a 24.</p><ul><li><strong>Respiratório</strong> (PaO₂/FiO₂): ≥ 400 = 0; &lt; 400 = 1; &lt; 300 = 2; &lt; 200 com suporte ventilatório = 3; &lt; 100 com suporte = 4.</li><li><strong>Coagulação</strong> (plaquetas ×10³/µL): ≥ 150 = 0; &lt; 150 = 1; &lt; 100 = 2; &lt; 50 = 3; &lt; 20 = 4.</li><li><strong>Fígado</strong> (bilirrubina, mg/dL): &lt; 1,2 = 0; 1,2–1,9 = 1; 2,0–5,9 = 2; 6,0–11,9 = 3; ≥ 12 = 4.</li><li><strong>Cardiovascular</strong>: PAM ≥ 70 = 0; PAM &lt; 70 = 1; dopamina ≤ 5 ou dobutamina = 2; dopamina &gt; 5, adrenalina ou noradrenalina ≤ 0,1 = 3; dopamina &gt; 15, adrenalina ou noradrenalina &gt; 0,1 = 4.</li><li><strong>Neurológico</strong> (Glasgow): 15 = 0; 13–14 = 1; 10–12 = 2; 6–9 = 3; &lt; 6 = 4.</li><li><strong>Renal</strong> (creatinina, mg/dL, ou diurese): &lt; 1,2 = 0; 1,2–1,9 = 1; 2,0–3,4 = 2; 3,5–4,9 ou diurese &lt; 500 mL/dia = 3; ≥ 5,0 ou diurese &lt; 200 mL/dia = 4.</li></ul>",
+    "table": [
+      [
+        "SOFA inicial",
+        "Mortalidade na UTI (Ferreira, 2001)"
+      ],
+      [
+        "Até 9",
+        "Menos de 33%"
+      ],
+      [
+        "Acima de 11",
+        "Até 95%"
+      ]
+    ],
+    "table_note": "Na Sepsis-3, aumento agudo de ≥ 2 pontos associa-se a mortalidade hospitalar em torno de 10% entre pacientes com infecção. A tendência do escore nas primeiras 48 h (subir ou cair) também tem valor prognóstico.",
+    "tips": [
+      "Use o pior valor de cada sistema nas últimas 24 horas. Sem disfunção prévia conhecida, assume-se SOFA basal de 0.",
+      "Sepse (Sepsis-3) = infecção suspeita ou confirmada com aumento agudo de ≥ 2 pontos; choque séptico = vasopressor para PAM ≥ 65 mmHg e lactato &gt; 2 mmol/L após reposição volêmica.",
+      "No paciente sedado, pontue o Glasgow estimado antes da sedação, e não o observado sob efeito de sedativos.",
+      "O componente renal não diferencia lesão aguda de doença renal crônica: compare com a creatinina basal do paciente.",
+      "O aumento do SOFA nas primeiras 48 horas prediz mortalidade maior que 50%, independentemente do valor inicial (Ferreira, 2001)."
+    ],
+    "sources": [
+      [
+        "Vincent JL et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. Intensive Care Med, 1996.",
+        "https://doi.org/10.1007/BF01709751"
+      ],
+      [
+        "Ferreira FL et al. Serial evaluation of the SOFA score to predict outcome in critically ill patients. JAMA, 2001.",
+        "https://doi.org/10.1001/jama.286.14.1754"
+      ],
+      [
+        "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
+        "https://doi.org/10.1001/jama.2016.0287"
+      ]
+    ],
+    "cases": [
+      [
+        "Sem disfunção: P/F 452, exames normais, 0",
+        {
+          "pao2": 95,
+          "fio2": 21,
+          "suporte": "0",
+          "plaq": 250,
+          "bili": 0.8,
+          "cv": "0",
+          "gcs": 15,
+          "cr": 0.9
+        },
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        {
+          "pao2": 70,
+          "fio2": 50,
+          "suporte": "0",
+          "plaq": 200,
+          "bili": 0.5,
+          "cv": "0",
+          "gcs": 15,
+          "cr": 0.8
+        },
+        {
+          "score": 2,
+          "raw": {
+            "resp": 2
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        {
+          "pao2": 60,
+          "fio2": 60,
+          "suporte": "1",
+          "plaq": 160,
+          "bili": 1,
+          "cv": "1",
+          "gcs": 15,
+          "cr": 1.3,
+          "diurese": 400
+        },
+        {
+          "score": 7,
+          "raw": {
+            "resp": 3,
+            "ren": 3
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        {
+          "pao2": 80,
+          "fio2": 40,
+          "suporte": "1",
+          "plaq": 90,
+          "bili": 2.5,
+          "cv": "3",
+          "gcs": 13,
+          "cr": 2.2
+        },
+        {
+          "score": 12,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "id": "sofa",
+    "status": "needs-review",
+    "reason": "O SOFA clássico do ZIP soma seis sistemas e descreve sepse por aumento ≥2 do basal. Não há entrada do SOFA basal. Separar pontuação absoluta de mudança aguda e interpretação clínica; não concluir sepse ou ausência de disfunção a partir do total isolado.",
+    "sourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "sourceTitle": "Surviving Sepsis Campaign — International Guidelines 2026",
+    "sourceDate": "2026",
+    "publisherRegion": "Internacional / SCCM–ESICM",
+    "checkedAt": "2026-09-25",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

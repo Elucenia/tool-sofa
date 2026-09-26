@@ -7,7 +7,7 @@ Identificador: `sofa`. Pacote independente da plataforma Elucenia, para navegado
 - Revisão: **needs-review**. O SOFA clássico do ZIP soma seis sistemas e descreve sepse por aumento ≥2 do basal. Não há entrada do SOFA basal. Separar pontuação absoluta de mudança aguda e interpretação clínica; não concluir sepse ou ausência de disfunção a partir do total isolado.
 - Execução: **disponível para reprodução técnica da fórmula**.
 - Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 4 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **pendente**.
+- 4 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **realizada em 2026-09-25**, 320 comparações conformes.
 - Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
 
 ## Uso no Node.js

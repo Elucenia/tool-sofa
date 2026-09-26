@@ -1,11 +1,11 @@
-/* tool-sofa · Elucenia · https://github.com/Elucenia/tool-sofa
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-sofa · ELUCENIA · https://github.com/Elucenia/tool-sofa
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"sofa","title":"Escore SOFA","fields":[["pao2","PaO₂","num",{"min":20,"max":700,"unit":"mmHg","ph":"80"}],["fio2","FiO₂","num",{"min":21,"max":100,"unit":"%","ph":"40"}],["suporte","Em ventilação mecânica ou suporte ventilatório?","radio",{"opts":{"0":"Não","1":"Sim"}}],["plaq","Plaquetas","num",{"min":1,"max":1500,"unit":"×10³/µL","ph":"150"}],["bili","Bilirrubina total","num",{"min":0.1,"max":50,"step":0.1,"unit":"mg/dL","ph":"1,0"}],["cv","Cardiovascular (doses em mcg/kg/min por ≥ 1 h)","sel",{"opts":{"0":"PAM ≥ 70 mmHg, sem vasopressor","1":"PAM &lt; 70 mmHg","2":"Dopamina ≤ 5 ou dobutamina (qualquer dose)","3":"Dopamina &gt; 5, adrenalina ≤ 0,1 ou noradrenalina ≤ 0,1","4":"Dopamina &gt; 15, adrenalina &gt; 0,1 ou noradrenalina &gt; 0,1"}}],["gcs","Escala de Coma de Glasgow","num",{"min":3,"max":15,"ph":"15"}],["cr","Creatinina","num",{"min":0.1,"max":20,"step":0.1,"unit":"mg/dL","ph":"1,0"}],["diurese","Diurese em 24 h","num",{"min":0,"max":10000,"unit":"mL/dia","ph":"1500","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

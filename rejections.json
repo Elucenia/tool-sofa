@@ -1,0 +1,1370 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pao2",
+    "input": {
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pao2",
+    "input": {
+      "pao2": "",
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pao2",
+    "input": {
+      "pao2": "NaN",
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pao2",
+    "input": {
+      "pao2": "Infinity",
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pao2",
+    "input": {
+      "pao2": "1e309",
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pao2",
+    "input": {
+      "pao2": "invalid",
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pao2",
+    "input": {
+      "pao2": {},
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pao2",
+    "input": {
+      "pao2": true,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pao2",
+    "input": {
+      "pao2": 18,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pao2",
+    "input": {
+      "pao2": 770,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fio2",
+    "input": {
+      "pao2": 95,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": "",
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": "NaN",
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": "Infinity",
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": "1e309",
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": "invalid",
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": {},
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": true,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": 18.9,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fio2",
+    "input": {
+      "pao2": 95,
+      "fio2": 110,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field suporte",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "suporte"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field suporte",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "suporte"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option suporte",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "__ELUCENIA_INVALID_OPTION__",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "suporte"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": "",
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": "NaN",
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": "Infinity",
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": "1e309",
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": "invalid",
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": {},
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": true,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 0,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum plaq",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 1650,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": "",
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": "NaN",
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": "Infinity",
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": "1e309",
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": "invalid",
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": {},
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": true,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": -0.9,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum bili",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 55,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "bili"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cv",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cv",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option cv",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "__ELUCENIA_INVALID_OPTION__",
+      "gcs": 15,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "cv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": "",
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": "NaN",
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": "Infinity",
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": "1e309",
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": "invalid",
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": {},
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": true,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 2,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum gcs",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 16.5,
+      "cr": 0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": -0.9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum cr",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum diurese",
+    "input": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9,
+      "diurese": 11000
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "diurese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

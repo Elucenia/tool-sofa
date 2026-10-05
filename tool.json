@@ -5,13 +5,13 @@
     "short": "Disfunção orgânica na sepse e na UTI",
     "desc": "Calcule o escore SOFA (Sequential Organ Failure Assessment) pelos seis sistemas orgânicos, com a definição de disfunção orgânica da Sepsis-3.",
     "lead": "Quantifica a disfunção de seis sistemas orgânicos (respiratório, coagulação, fígado, cardiovascular, neurológico e renal). É a base da definição de sepse (Sepsis-3) e acompanha a evolução do paciente crítico.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-intensiva",
       "medicina-de-emergencia",
       "infectologia",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "pao2",
@@ -118,29 +118,7 @@
         }
       ]
     ],
-    "formula": "<p>Cada sistema pontua de 0 a 4; o total vai de 0 a 24.</p><ul><li><strong>Respiratório</strong> (PaO₂/FiO₂): ≥ 400 = 0; &lt; 400 = 1; &lt; 300 = 2; &lt; 200 com suporte ventilatório = 3; &lt; 100 com suporte = 4.</li><li><strong>Coagulação</strong> (plaquetas ×10³/µL): ≥ 150 = 0; &lt; 150 = 1; &lt; 100 = 2; &lt; 50 = 3; &lt; 20 = 4.</li><li><strong>Fígado</strong> (bilirrubina, mg/dL): &lt; 1,2 = 0; 1,2–1,9 = 1; 2,0–5,9 = 2; 6,0–11,9 = 3; ≥ 12 = 4.</li><li><strong>Cardiovascular</strong>: PAM ≥ 70 = 0; PAM &lt; 70 = 1; dopamina ≤ 5 ou dobutamina = 2; dopamina &gt; 5, adrenalina ou noradrenalina ≤ 0,1 = 3; dopamina &gt; 15, adrenalina ou noradrenalina &gt; 0,1 = 4.</li><li><strong>Neurológico</strong> (Glasgow): 15 = 0; 13–14 = 1; 10–12 = 2; 6–9 = 3; &lt; 6 = 4.</li><li><strong>Renal</strong> (creatinina, mg/dL, ou diurese): &lt; 1,2 = 0; 1,2–1,9 = 1; 2,0–3,4 = 2; 3,5–4,9 ou diurese &lt; 500 mL/dia = 3; ≥ 5,0 ou diurese &lt; 200 mL/dia = 4.</li></ul>",
-    "table": [
-      [
-        "SOFA inicial",
-        "Mortalidade na UTI (Ferreira, 2001)"
-      ],
-      [
-        "Até 9",
-        "Menos de 33%"
-      ],
-      [
-        "Acima de 11",
-        "Até 95%"
-      ]
-    ],
-    "table_note": "Na Sepsis-3, aumento agudo de ≥ 2 pontos associa-se a mortalidade hospitalar em torno de 10% entre pacientes com infecção. A tendência do escore nas primeiras 48 h (subir ou cair) também tem valor prognóstico.",
-    "tips": [
-      "Use o pior valor de cada sistema nas últimas 24 horas. Sem disfunção prévia conhecida, assume-se SOFA basal de 0.",
-      "Sepse (Sepsis-3) = infecção suspeita ou confirmada com aumento agudo de ≥ 2 pontos; choque séptico = vasopressor para PAM ≥ 65 mmHg e lactato &gt; 2 mmol/L após reposição volêmica.",
-      "No paciente sedado, pontue o Glasgow estimado antes da sedação, e não o observado sob efeito de sedativos.",
-      "O componente renal não diferencia lesão aguda de doença renal crônica: compare com a creatinina basal do paciente.",
-      "O aumento do SOFA nas primeiras 48 horas prediz mortalidade maior que 50%, independentemente do valor inicial (Ferreira, 2001)."
-    ],
+    "formula": "<p>Cada sistema pontua de 0 a 4; o total vai de 0 a 24.</p><ul><li><strong>Respiratório</strong> (PaO₂/FiO₂): ≥ 400 = 0; &lt; 400 = 1; &lt; 300 = 2; &lt; 200 com suporte ventilatório = 3; &lt; 100 com suporte = 4.</li><li><strong>Coagulação</strong> (plaquetas ×10³/µL): ≥ 150 = 0; &lt; 150 = 1; &lt; 100 = 2; &lt; 50 = 3; &lt; 20 = 4.</li><li><strong>Fígado</strong> (bilirrubina, mg/dL): &lt; 1,2 = 0; 1,2–1,9 = 1; 2,0–5,9 = 2; 6,0–11,9 = 3; ≥ 12 = 4.</li><li><strong>Cardiovascular</strong> (doses de vasoativos em µg/kg/min, administradas por pelo menos 1 hora): PAM ≥ 70 = 0; PAM &lt; 70 = 1; dopamina ≤ 5 ou dobutamina = 2; dopamina &gt; 5, adrenalina ou noradrenalina ≤ 0,1 = 3; dopamina &gt; 15, adrenalina ou noradrenalina &gt; 0,1 = 4.</li><li><strong>Neurológico</strong> (Glasgow): 15 = 0; 13–14 = 1; 10–12 = 2; 6–9 = 3; &lt; 6 = 4.</li><li><strong>Renal</strong> (creatinina, mg/dL, ou diurese): &lt; 1,2 = 0; 1,2–1,9 = 1; 2,0–3,4 = 2; 3,5–4,9 ou diurese &lt; 500 mL/dia = 3; ≥ 5,0 ou diurese &lt; 200 mL/dia = 4.</li></ul>",
     "sources": [
       [
         "Vincent JL et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. Intensive Care Med, 1996.",
@@ -153,6 +131,10 @@
       [
         "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
         "https://doi.org/10.1001/jama.2016.0287"
+      ],
+      [
+        "Sepsis-3,2016",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/"
       ]
     ],
     "cases": [
@@ -233,9 +215,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -244,23 +223,724 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T17:23:41.287Z",
+      "total": 408,
+      "passed": 408,
+      "sourceRowCount": 408,
+      "uniqueApiInputCount": 408,
+      "sourceContextCount": 408,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "2fbe4f92010d6ac2abcfc8b7bf7ce2c6fbb4a4686a58281776e6124e3191acc4",
+        "total": 408,
+        "bankRowCount": 408,
+        "uniqueApiInputCount": 408,
+        "sourceContextCount": 408,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          },
+          {
+            "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+            "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+          "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+        },
+        "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 408,
+        "uniqueApiInputs": 408,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+          "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+        }
+      },
+      "scope": "408 bounded representative/unambiguous source numeric inputs: exact total and six source component scores; selected cardiovascular score is not a vasoactive dose classifier. Exact bilirubin12/creatinine5, decimal table gaps and dopamine classifier are excluded. Clinical, professional translation and source rights approval not performed.",
+      "sources": [
+        {
+          "id": "sofa",
+          "declaredEdition": "Vincent1996",
+          "numericEvidenceEdition": "Singer2016 Sepsis3 Table1, expressly adapted from Vincent1996",
+          "url": "https://www.bumc.bu.edu/emergencymedicine/files/2016/04/Singer-et-al.-Third-Intnl-Consensus-Definition-Sepsis-Septic-Shock.-JAMA-2016.pdf",
+          "doi": "10.1001/jama.2016.0287",
+          "access": "University mirror of the original2016 paper downloaded; printed804 Table1 visually inspected. Vincent1996 publisher preview confirms identity, but its fullPDF is paywalled and was not read.",
+          "readScope": [
+            "2016 Table1, PDFp4/printed804",
+            "2016 adult sepsis definition and baseline-organ-dysfunction qualification"
+          ],
+          "notVerified": [
+            "Original1996 fulltable",
+            "Ambiguous bilirubin12/creatinine5/dopamine5 boundary classifications",
+            "Clinical qualification, timing/max-daily score, performance, patient prediction or treatment"
+          ],
+          "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+          "sourceFindings": [
+            {
+              "status": "edition-boundary-inconclusive",
+              "detail": "Printed2016 table uses bilirubin>12.0, creatinine>5.0, dopamine<5 and5.1–15, with uncovered exact values/gaps. Those values are deliberately excluded from measured-boundary certification; no silent reinterpretation of the1996 edition."
+            },
+            {
+              "status": "input-label-difference",
+              "detail": "Current cardiovascular selection2 uses dopamine≤5, selection3 dopamine>5 with no explicit≤15 bound. This test checks caller-selected points, not dose classification."
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+      "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+        "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+        "recordedAt": "2026-10-04T18:58:10.669Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+          "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+          "summary": {
+            "checks": 55762,
+            "failed": 0,
+            "helperAssertions": 50346,
+            "sourceRows": 6947,
+            "uniqueInputObjects": 6947,
+            "freshNodeExecutions": 20841,
+            "methods": 137,
+            "allSourceRows": 60865,
+            "allUniqueInputs": 60792,
+            "allDuplicateRows": 73
+          },
+          "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+          "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+        },
+        "reviewedBankScope": "408 bounded representative/unambiguous source numeric inputs: exact total and six source component scores; selected cardiovascular score is not a vasoactive dose classifier. Exact bilirubin12/creatinine5, decimal table gaps and dopamine classifier are excluded. Clinical, professional translation and source rights approval not performed.",
+        "currentBinding": {
+          "source26BankSha256": "a1426bab94a5de19cf3a8f1664171e92642b774f3b1c1c44394318989a8f7217",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/sofa/calculator.js",
+              "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/sofa/calculator.js",
+              "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/sofa/calculator.js",
+              "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 1224,
+      "actualVmExecutions": 1224,
+      "implementations": [
+        {
+          "app": "website",
+          "id": "sofa",
+          "file": "apps/website/private/tool-code/sofa/calculator.js",
+          "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+        },
+        {
+          "app": "dashboard",
+          "id": "sofa",
+          "file": "apps/dashboard/private/tool-code/sofa/calculator.js",
+          "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+        },
+        {
+          "app": "command-center",
+          "id": "sofa",
+          "file": "apps/command-center/private/tool-code/sofa/calculator.js",
+          "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+        }
+      ],
+      "qualifications": [
+        "408 bounded representative/unambiguous source numeric inputs: exact total and six source component scores; selected cardiovascular score is not a vasoactive dose classifier. Exact bilirubin12/creatinine5, decimal table gaps and dopamine classifier are excluded. Clinical, professional translation and source rights approval not performed.",
+        "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+        "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+        "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "SOFA/Vincent 1996:6 sistemas 0–4, total 0–24; limiares clássicos; sem SOFA 2",
+    "implementationVersion": "sofa@native-2026-10-03+eed7d8c8e9ab",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8844239/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cada sistema pontua de 0 a 4; o total vai de 0 a 24. Respiratório (PaO₂/FiO₂): ≥ 400 = 0; < 400 = 1; < 300 = 2; < 200 com suporte ventilatório = 3; < 100 com suporte = 4. Coagulação (plaquetas ×10³/µL): ≥ 150 = 0; < 150 = 1; < 100 = 2; < 50 = 3; < 20 = 4. Fígado (bilirrubina, mg/dL): < 1,2 = 0; 1,2–1,9 = 1; 2,0–5,9 = 2; 6,0–11,9 = 3; ≥ 12 = 4. Cardiovascular (doses de vasoativos em µg/kg/min, administradas por pelo menos 1 hora): PAM ≥ 70 = 0; PAM < 70 = 1; dopamina ≤ 5 ou dobutamina = 2; dopamina > 5, adrenalina ou noradrenalina ≤ 0,1 = 3; dopamina > 15, adrenalina ou noradrenalina > 0,1 = 4. Neurológico (Glasgow): 15 = 0; 13–14 = 1; 10–12 = 2; 6–9 = 3; < 6 = 4. Renal (creatinina, mg/dL, ou diurese): < 1,2 = 0; 1,2–1,9 = 1; 2,0–3,4 = 2; 3,5–4,9 ou diurese < 500 mL/dia = 3; ≥ 5,0 ou diurese < 200 mL/dia = 4.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "pao2",
+            "label": "PaO₂",
+            "type": "num",
+            "min": 20,
+            "max": 700,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fio2",
+            "label": "FiO₂",
+            "type": "num",
+            "min": 21,
+            "max": 100,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "suporte",
+            "label": "Em ventilação mecânica ou suporte ventilatório?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "plaq",
+            "label": "Plaquetas",
+            "type": "num",
+            "min": 1,
+            "max": 1500,
+            "unit": "×10³/µL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "bili",
+            "label": "Bilirrubina total",
+            "type": "num",
+            "min": 0.1,
+            "max": 50,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cv",
+            "label": "Cardiovascular (doses em mcg/kg/min por ≥ 1 h)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "PAM ≥ 70 mmHg, sem vasopressor",
+              "1": "PAM &lt; 70 mmHg",
+              "2": "Dopamina ≤ 5 ou dobutamina (qualquer dose)",
+              "3": "Dopamina &gt; 5, adrenalina ≤ 0,1 ou noradrenalina ≤ 0,1",
+              "4": "Dopamina &gt; 15, adrenalina &gt; 0,1 ou noradrenalina &gt; 0,1"
+            }
+          },
+          {
+            "key": "gcs",
+            "label": "Escala de Coma de Glasgow",
+            "type": "num",
+            "min": 3,
+            "max": 15,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cr",
+            "label": "Creatinina",
+            "type": "num",
+            "min": 0.1,
+            "max": 20,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "diurese",
+            "label": "Diurese em 24 h",
+            "type": "num",
+            "min": 0,
+            "max": 10000,
+            "unit": "mL/dia",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "45ea5db4f637d4e56c856573cdbe32e21e4132f37555734ad7c4ae5d849b4283"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Vincent JL et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. Intensive Care Med, 1996.",
+          "url": "https://doi.org/10.1007/BF01709751",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine.",
+            "year": "1996",
+            "firstPublicationDate": "1996-07-01",
+            "doi": "10.1007/bf01709751",
+            "pmid": "8844239",
+            "journal": "Intensive care medicine",
+            "authors": "Vincent JL, Moreno R, Takala J, Willatts S, De Mendonça A, Bruining H, Reinhart CK, Suter PM, Thijs LG."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/8844239/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Ferreira FL et al. Serial evaluation of the SOFA score to predict outcome in critically ill patients. JAMA, 2001.",
+          "url": "https://doi.org/10.1001/jama.286.14.1754",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Serial evaluation of the SOFA score to predict outcome in critically ill patients.",
+            "year": "2001",
+            "firstPublicationDate": "2001-10-01",
+            "doi": "10.1001/jama.286.14.1754",
+            "pmid": "11594901",
+            "journal": "JAMA",
+            "authors": "Ferreira FL, Bota DP, Bross A, Mélot C, Vincent JL."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/11594901/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "6038a9863942b396816b108bb52ea9a0df8b58c9442d6c7d6bd58312e1e9a205",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
+          "url": "https://doi.org/10.1001/jama.2016.0287",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3).",
+            "year": "2016",
+            "firstPublicationDate": "2016-02-01",
+            "doi": "10.1001/jama.2016.0287",
+            "pmid": "26903338",
+            "pmcid": "PMC4968574",
+            "journal": "JAMA",
+            "authors": "Singer M, Deutschman CS, Seymour CW, Shankar-Hari M, Annane D, Bauer M, Bellomo R, Bernard GR, Chiche JD, Coopersmith CM, Hotchkiss RS, Levy MM, Marshall JC, Martin GS, Opal SM, Rubenfeld GD, van der Poll T, Vincent JL, Angus DC."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c1cb0f98b355482761c0dbe96dda0c31ac720b0b065a7ef55cd5888355f7aee7",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T17:23:41.287Z",
+        "total": 408,
+        "passed": 408,
+        "sourceRowCount": 408,
+        "uniqueApiInputCount": 408,
+        "sourceContextCount": 408,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "2fbe4f92010d6ac2abcfc8b7bf7ce2c6fbb4a4686a58281776e6124e3191acc4",
+          "total": 408,
+          "bankRowCount": 408,
+          "uniqueApiInputCount": 408,
+          "sourceContextCount": 408,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+              "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+            },
+            {
+              "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+              "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+            "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+          },
+          "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 408,
+          "uniqueApiInputs": 408,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          }
+        },
+        "scope": "408 bounded representative/unambiguous source numeric inputs: exact total and six source component scores; selected cardiovascular score is not a vasoactive dose classifier. Exact bilirubin12/creatinine5, decimal table gaps and dopamine classifier are excluded. Clinical, professional translation and source rights approval not performed.",
+        "sources": [
+          {
+            "id": "sofa",
+            "declaredEdition": "Vincent1996",
+            "numericEvidenceEdition": "Singer2016 Sepsis3 Table1, expressly adapted from Vincent1996",
+            "url": "https://www.bumc.bu.edu/emergencymedicine/files/2016/04/Singer-et-al.-Third-Intnl-Consensus-Definition-Sepsis-Septic-Shock.-JAMA-2016.pdf",
+            "doi": "10.1001/jama.2016.0287",
+            "access": "University mirror of the original2016 paper downloaded; printed804 Table1 visually inspected. Vincent1996 publisher preview confirms identity, but its fullPDF is paywalled and was not read.",
+            "readScope": [
+              "2016 Table1, PDFp4/printed804",
+              "2016 adult sepsis definition and baseline-organ-dysfunction qualification"
+            ],
+            "notVerified": [
+              "Original1996 fulltable",
+              "Ambiguous bilirubin12/creatinine5/dopamine5 boundary classifications",
+              "Clinical qualification, timing/max-daily score, performance, patient prediction or treatment"
+            ],
+            "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+            "sourceFindings": [
+              {
+                "status": "edition-boundary-inconclusive",
+                "detail": "Printed2016 table uses bilirubin>12.0, creatinine>5.0, dopamine<5 and5.1–15, with uncovered exact values/gaps. Those values are deliberately excluded from measured-boundary certification; no silent reinterpretation of the1996 edition."
+              },
+              {
+                "status": "input-label-difference",
+                "detail": "Current cardiovascular selection2 uses dopamine≤5, selection3 dopamine>5 with no explicit≤15 bound. This test checks caller-selected points, not dose classification."
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+        "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+          "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+          "recordedAt": "2026-10-04T18:58:10.669Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+            "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+            "summary": {
+              "checks": 55762,
+              "failed": 0,
+              "helperAssertions": 50346,
+              "sourceRows": 6947,
+              "uniqueInputObjects": 6947,
+              "freshNodeExecutions": 20841,
+              "methods": 137,
+              "allSourceRows": 60865,
+              "allUniqueInputs": 60792,
+              "allDuplicateRows": 73
+            },
+            "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+            "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+          },
+          "reviewedBankScope": "408 bounded representative/unambiguous source numeric inputs: exact total and six source component scores; selected cardiovascular score is not a vasoactive dose classifier. Exact bilirubin12/creatinine5, decimal table gaps and dopamine classifier are excluded. Clinical, professional translation and source rights approval not performed.",
+          "currentBinding": {
+            "source26BankSha256": "a1426bab94a5de19cf3a8f1664171e92642b774f3b1c1c44394318989a8f7217",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/sofa/calculator.js",
+                "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/sofa/calculator.js",
+                "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/sofa/calculator.js",
+                "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 1224,
+        "actualVmExecutions": 1224,
+        "implementations": [
+          {
+            "app": "website",
+            "id": "sofa",
+            "file": "apps/website/private/tool-code/sofa/calculator.js",
+            "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+          },
+          {
+            "app": "dashboard",
+            "id": "sofa",
+            "file": "apps/dashboard/private/tool-code/sofa/calculator.js",
+            "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+          },
+          {
+            "app": "command-center",
+            "id": "sofa",
+            "file": "apps/command-center/private/tool-code/sofa/calculator.js",
+            "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+          }
+        ],
+        "qualifications": [
+          "408 bounded representative/unambiguous source numeric inputs: exact total and six source component scores; selected cardiovascular score is not a vasoactive dose classifier. Exact bilirubin12/creatinine5, decimal table gaps and dopamine classifier are excluded. Clinical, professional translation and source rights approval not performed.",
+          "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+          "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+          "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10",
+      "sourceAnnotationAmendment": {
+        "receipt": "reports/review-20261003/eight-organ-functional-source-corrections-candidate-final26-r4-r2.json",
+        "sourceReviewSha256": "e1a3a85edb2d38e880b320918a3738586221e4c5e7041bc83b51ec7b584385cc",
+        "previousMethodVersion": "SOFA/Vincent 1996:6 sistemas 0–4, total 0–24; limiares clássicos; sem SOFA 2",
+        "scope": "Source-edition and displayed-rubric limitations only; no clinical/instrument-language/rights approval and no arithmetic changes."
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-04T17:52:09.841Z",
+          "changes": [
+            "inputContract",
+            "implementedVariant"
+          ],
+          "priorImplementationVersion": "sofa@native-2026-10-03+eed7d8c8e9ab",
+          "priorImplementationHash": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10",
+          "priorInputContract": {
+            "fields": [
+              {
+                "key": "pao2",
+                "label": "PaO₂",
+                "type": "num",
+                "min": 20,
+                "max": 700,
+                "unit": "mmHg",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "fio2",
+                "label": "FiO₂",
+                "type": "num",
+                "min": 21,
+                "max": 100,
+                "unit": "%",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "suporte",
+                "label": "Em ventilação mecânica ou suporte ventilatório?",
+                "type": "radio",
+                "optional": false,
+                "options": {
+                  "0": "Não",
+                  "1": "Sim"
+                }
+              },
+              {
+                "key": "plaq",
+                "label": "Plaquetas",
+                "type": "num",
+                "min": 1,
+                "max": 1500,
+                "unit": "×10³/µL",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "bili",
+                "label": "Bilirrubina total",
+                "type": "num",
+                "min": 0.1,
+                "max": 50,
+                "unit": "mg/dL",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "cv",
+                "label": "Cardiovascular (doses em mcg/kg/min por ≥ 1 h)",
+                "type": "sel",
+                "optional": false,
+                "options": {
+                  "0": "PAM ≥ 70 mmHg, sem vasopressor",
+                  "1": "PAM &lt; 70 mmHg",
+                  "2": "Dopamina ≤ 5 ou dobutamina (qualquer dose)",
+                  "3": "Dopamina &gt; 5, adrenalina ≤ 0,1 ou noradrenalina ≤ 0,1",
+                  "4": "Dopamina &gt; 15, adrenalina &gt; 0,1 ou noradrenalina &gt; 0,1"
+                }
+              },
+              {
+                "key": "gcs",
+                "label": "Escala de Coma de Glasgow",
+                "type": "num",
+                "min": 3,
+                "max": 15,
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "cr",
+                "label": "Creatinina",
+                "type": "num",
+                "min": 0.1,
+                "max": 20,
+                "unit": "mg/dL",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "diurese",
+                "label": "Diurese em 24 h",
+                "type": "num",
+                "min": 0,
+                "max": 10000,
+                "unit": "mL/dia",
+                "optional": true,
+                "options": null
+              }
+            ],
+            "hash": "db2213a9829959012a656ff4f012ee9452dd8cc18598626065004f61519ba000"
+          },
+          "priorImplementedVariant": "Cada sistema pontua de 0 a 4; o total vai de 0 a 24. Respiratório (PaO₂/FiO₂): ≥ 400 = 0; < 400 = 1; < 300 = 2; < 200 com suporte ventilatório = 3; < 100 com suporte = 4. Coagulação (plaquetas ×10³/µL): ≥ 150 = 0; < 150 = 1; < 100 = 2; < 50 = 3; < 20 = 4. Fígado (bilirrubina, mg/dL): < 1,2 = 0; 1,2–1,9 = 1; 2,0–5,9 = 2; 6,0–11,9 = 3; ≥ 12 = 4. Cardiovascular : PAM ≥ 70 = 0; PAM < 70 = 1; dopamina ≤ 5 ou dobutamina = 2; dopamina > 5, adrenalina ou noradrenalina ≤ 0,1 = 3; dopamina > 15, adrenalina ou noradrenalina > 0,1 = 4. Neurológico (Glasgow): 15 = 0; 13–14 = 1; 10–12 = 2; 6–9 = 3; < 6 = 4. Renal (creatinina, mg/dL, ou diurese): < 1,2 = 0; 1,2–1,9 = 1; 2,0–3,4 = 2; 3,5–4,9 ou diurese < 500 mL/dia = 3; ≥ 5,0 ou diurese < 200 mL/dia = 4.",
+          "explicitMethodVersion": "SOFA/Vincent 1996:6 sistemas 0–4, total 0–24; limiares clássicos; sem SOFA 2",
+          "sourceEvidenceUnchanged": true,
+          "independentArithmeticUnchanged": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "scope": "Declarative technical rebinding only. Source access scope, source proofs and original failure/test histories remain unchanged."
+        }
+      ]
+    },
+    "limits": "SOFA clássico: descreve disfunção orgânica em adultos criticamente enfermos; registre o momento da avaliação e a função prévia dos órgãos. Na definição Sepsis-3 de 2016, a variação aguda de pelo menos 2 pontos deve decorrer de infecção; o basal só pode ser presumido zero quando não há disfunção orgânica prévia conhecida. O total isolado não diagnostica infecção nem fornece uma probabilidade individual de morte. Não extrapole a classificação clássica para crianças. As doses vasoativas são em µg/kg/min, administradas por pelo menos 1 hora; a diurese se refere a 24 horas. A Tabela 1 de Sepsis-3 (2016), adaptada de Vincent 1996, imprime bilirrubina > 12,0 mg/dL, creatinina > 5,0 mg/dL e dopamina < 5 ou 5,1–15 µg/kg/min. A tabela integral de 1996 não foi obtida nesta revisão. As diferenças e lacunas nesses limites não foram adjudicadas; a conferência numérica usou apenas valores inequívocos e pontos cardiovasculares já selecionados.",
+    "limitsEvidence": {
+      "status": "specific-primary-sections-and-original-abstract-read",
+      "sources": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/",
+          "edition": "Sepsis-3,2016",
+          "readScope": "Direct primary consensus text: Table1 footnotes, Box3 baseline/change criteria and adult-population limitation. Named sections only."
+        },
+        {
+          "url": "https://doi.org/10.1001/jama.286.14.1754",
+          "edition": "Ferreira2001",
+          "readScope": "Cached exact original-publication abstract fully read:352 consecutive patients, ICU stay>24h, serial48h assessment. Full article not read."
+        },
+        {
+          "url": "https://doi.org/10.1007/BF01709751",
+          "edition": "Vincent1996",
+          "readScope": "Bibliographic identity only; original full table not newly read."
+        }
+      ],
+      "populationScope": "Classic adult critical-care organ dysfunction; not a pediatric score.",
+      "remainingChecks": [
+        "Original1996 paper not read in full.",
+        "No complete pediatric/source-table conformance review."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
+    },
+    "sourceLimitEvidence": {
+      "sourceAnnotationAmendment": {
+        "receipt": "reports/review-20261003/eight-organ-functional-source-corrections-candidate-final26-r4-r2.json",
+        "sourceReview": {
+          "file": "reports/review-20261003/eight-organ-functional-primary-source-review-final26.json",
+          "sha256": "e1a3a85edb2d38e880b320918a3738586221e4c5e7041bc83b51ec7b584385cc"
+        },
+        "declaredEditionBefore": "SOFA/Vincent 1996:6 sistemas 0–4, total 0–24; limiares clássicos; sem SOFA 2",
+        "numericEvidenceEdition": "Singer2016 Sepsis3 Table1, expressly adapted from Vincent1996",
+        "access": "University mirror of the original2016 paper downloaded; printed804 Table1 visually inspected. Vincent1996 publisher preview confirms identity, but its fullPDF is paywalled and was not read.",
+        "findings": [
+          {
+            "status": "edition-boundary-inconclusive",
+            "detail": "Printed2016 table uses bilirubin>12.0, creatinine>5.0, dopamine<5 and5.1–15, with uncovered exact values/gaps. Those values are deliberately excluded from measured-boundary certification; no silent reinterpretation of the1996 edition."
+          },
+          {
+            "status": "input-label-difference",
+            "detail": "Current cardiovascular selection2 uses dopamine≤5, selection3 dopamine>5 with no explicit≤15 bound. This test checks caller-selected points, not dose classification."
+          }
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "rightsApproval": "not-performed"
+      }
     }
   },
-  "review": {
-    "id": "sofa",
-    "status": "needs-review",
-    "reason": "O SOFA clássico do ZIP soma seis sistemas e descreve sepse por aumento ≥2 do basal. Não há entrada do SOFA basal. Separar pontuação absoluta de mudança aguda e interpretação clínica; não concluir sepse ou ausência de disfunção a partir do total isolado.",
-    "sourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
-    "sourceTitle": "Surviving Sepsis Campaign — International Guidelines 2026",
-    "sourceDate": "2026",
-    "publisherRegion": "Internacional / SCCM–ESICM",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/sofa/calculator.js",
+    "bytes": 6179,
+    "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "8342857bfbe409beff656001f94354a26b3247da7db1ffb00504e98bba54cbbe",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "7cd9e1be8b0ec918c70ceb7556c57625431fbb814ae405920a53801aff2a675c",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "7cd9e1be8b0ec918c70ceb7556c57625431fbb814ae405920a53801aff2a675c",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

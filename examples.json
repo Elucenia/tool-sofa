@@ -1,6 +1,19 @@
 [
   {
-    "label": "Sem disfunção: P/F 452, exames normais, 0",
+    "id": "sofa",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sem disfunção: P/F 452, exames normais, 0",
+    "originalInput": {
+      "pao2": 95,
+      "fio2": 21,
+      "suporte": "0",
+      "plaq": 250,
+      "bili": 0.8,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.9
+    },
     "input": {
       "pao2": 95,
       "fio2": 21,
@@ -15,20 +28,47 @@
       "score": 0,
       "level": "low"
     },
-    "originalInput": {
-      "pao2": 95,
-      "fio2": 21,
-      "suporte": "0",
-      "plaq": 250,
-      "bili": 0.8,
-      "cv": "0",
-      "gcs": 15,
-      "cr": 0.9
+    "recordedResult": {
+      "main": [
+        "0",
+        "de 24"
+      ],
+      "label": "Escore SOFA",
+      "raw": {
+        "score": 0,
+        "resp": 0,
+        "coag": 0,
+        "fig": 0,
+        "cv": 0,
+        "snc": 0,
+        "ren": 0,
+        "pf": 452.3809523809524
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+    "id": "sofa",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+    "originalInput": {
+      "pao2": 70,
+      "fio2": 50,
+      "suporte": "0",
+      "plaq": 200,
+      "bili": 0.5,
+      "cv": "0",
+      "gcs": 15,
+      "cr": 0.8
+    },
     "input": {
       "pao2": 70,
       "fio2": 50,
@@ -46,20 +86,48 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "pao2": 70,
-      "fio2": 50,
-      "suporte": "0",
-      "plaq": 200,
-      "bili": 0.5,
-      "cv": "0",
-      "gcs": 15,
-      "cr": 0.8
+    "recordedResult": {
+      "main": [
+        "2",
+        "de 24"
+      ],
+      "label": "Escore SOFA",
+      "raw": {
+        "score": 2,
+        "resp": 2,
+        "coag": 0,
+        "fig": 0,
+        "cv": 0,
+        "snc": 0,
+        "ren": 0,
+        "pf": 140
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+    "id": "sofa",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+    "originalInput": {
+      "pao2": 60,
+      "fio2": 60,
+      "suporte": "1",
+      "plaq": 160,
+      "bili": 1,
+      "cv": "1",
+      "gcs": 15,
+      "cr": 1.3,
+      "diurese": 400
+    },
     "input": {
       "pao2": 60,
       "fio2": 60,
@@ -79,21 +147,47 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "pao2": 60,
-      "fio2": 60,
-      "suporte": "1",
-      "plaq": 160,
-      "bili": 1,
-      "cv": "1",
-      "gcs": 15,
-      "cr": 1.3,
-      "diurese": 400
+    "recordedResult": {
+      "main": [
+        "7",
+        "de 24"
+      ],
+      "label": "Escore SOFA",
+      "raw": {
+        "score": 7,
+        "resp": 3,
+        "coag": 0,
+        "fig": 0,
+        "cv": 1,
+        "snc": 0,
+        "ren": 3,
+        "pf": 100
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+    "id": "sofa",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+    "originalInput": {
+      "pao2": 80,
+      "fio2": 40,
+      "suporte": "1",
+      "plaq": 90,
+      "bili": 2.5,
+      "cv": "3",
+      "gcs": 13,
+      "cr": 2.2
+    },
     "input": {
       "pao2": 80,
       "fio2": 40,
@@ -108,16 +202,30 @@
       "score": 12,
       "level": "high"
     },
-    "originalInput": {
-      "pao2": 80,
-      "fio2": 40,
-      "suporte": "1",
-      "plaq": 90,
-      "bili": 2.5,
-      "cv": "3",
-      "gcs": 13,
-      "cr": 2.2
+    "recordedResult": {
+      "main": [
+        "12",
+        "de 24"
+      ],
+      "label": "Escore SOFA",
+      "raw": {
+        "score": 12,
+        "resp": 2,
+        "coag": 2,
+        "fig": 2,
+        "cv": 3,
+        "snc": 1,
+        "ren": 2,
+        "pf": 200
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

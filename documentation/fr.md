@@ -128,3 +128,71 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Pas de dysfonction organique pertinente selon le SOFA
+
+| Détails du résultat | |
+| --- | --- |
+| Respiratoire (PaO₂/FiO₂ 452) | 0 |
+| Coagulation | 0 |
+| Foie | 0 |
+| Cardiovasculaire | 0 |
+| Système nerveux central | 0 |
+| Rénal | 0 |
+
+Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).
+
+
+### 2
+
+Dysfonction organique (SOFA ≥ 2)
+
+| Détails du résultat | |
+| --- | --- |
+| Respiratoire (PaO₂/FiO₂ 140) | 2 |
+| Coagulation | 0 |
+| Foie | 0 |
+| Cardiovasculaire | 0 |
+| Système nerveux central | 0 |
+| Rénal | 0 |
+
+Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).
+
+
+### 3
+
+Dysfonction organique (SOFA ≥ 2)
+
+| Détails du résultat | |
+| --- | --- |
+| Respiratoire (PaO₂/FiO₂ 100) | 3 |
+| Coagulation | 0 |
+| Foie | 0 |
+| Cardiovasculaire | 1 |
+| Système nerveux central | 0 |
+| Rénal | 3 |
+
+Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).
+
+
+### 4
+
+Dysfonction organique sévère (SOFA ≥ 10)
+
+| Détails du résultat | |
+| --- | --- |
+| Respiratoire (PaO₂/FiO₂ 200) | 2 |
+| Coagulation | 2 |
+| Foie | 2 |
+| Cardiovasculaire | 3 |
+| Système nerveux central | 1 |
+| Rénal | 2 |
+
+Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).
+

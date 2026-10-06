@@ -1,0 +1,4623 @@
+{
+  "id": "sofa",
+  "implementationVersion": "sofa@native-2026-10-05+3c7ee3b1f1a5",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratório (PaO₂/FiO₂ 452)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fígado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso central",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sem disfunção orgânica relevante pelo SOFA",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratório (PaO₂/FiO₂ 140)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fígado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso central",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunção orgânica (SOFA ≥ 2)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratório (PaO₂/FiO₂ 100)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fígado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso central",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunção orgânica (SOFA ≥ 2)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratório (PaO₂/FiO₂ 200)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fígado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso central",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunção orgânica grave (SOFA ≥ 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratory (PaO₂/FiO₂ 452)",
+                "locale": "en",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "en",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Liver",
+                "locale": "en",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "en",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Central nervous system",
+                "locale": "en",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "en",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No relevant organ dysfunction by SOFA",
+            "locale": "en",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).",
+            "locale": "en",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratory (PaO₂/FiO₂ 140)",
+                "locale": "en",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "en",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Liver",
+                "locale": "en",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "en",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Central nervous system",
+                "locale": "en",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "en",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Organ dysfunction (SOFA ≥ 2)",
+            "locale": "en",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).",
+            "locale": "en",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratory (PaO₂/FiO₂ 100)",
+                "locale": "en",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "en",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Liver",
+                "locale": "en",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "en",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Central nervous system",
+                "locale": "en",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "en",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Organ dysfunction (SOFA ≥ 2)",
+            "locale": "en",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).",
+            "locale": "en",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratory (PaO₂/FiO₂ 200)",
+                "locale": "en",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "en",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Liver",
+                "locale": "en",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "en",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Central nervous system",
+                "locale": "en",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "en",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Severe organ dysfunction (SOFA ≥ 10)",
+            "locale": "en",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).",
+            "locale": "en",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 452)",
+                "locale": "es",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulación",
+                "locale": "es",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Hígado",
+                "locale": "es",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "es",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervioso central",
+                "locale": "es",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "es",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sin disfunción orgánica relevante según SOFA",
+            "locale": "es",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).",
+            "locale": "es",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 140)",
+                "locale": "es",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulación",
+                "locale": "es",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Hígado",
+                "locale": "es",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "es",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervioso central",
+                "locale": "es",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "es",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunción orgánica (SOFA ≥ 2)",
+            "locale": "es",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).",
+            "locale": "es",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 100)",
+                "locale": "es",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulación",
+                "locale": "es",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Hígado",
+                "locale": "es",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "es",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervioso central",
+                "locale": "es",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "es",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunción orgánica (SOFA ≥ 2)",
+            "locale": "es",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).",
+            "locale": "es",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 200)",
+                "locale": "es",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulación",
+                "locale": "es",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Hígado",
+                "locale": "es",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascular",
+                "locale": "es",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervioso central",
+                "locale": "es",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "es",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunción orgánica grave (SOFA ≥ 10)",
+            "locale": "es",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).",
+            "locale": "es",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratoire (PaO₂/FiO₂ 452)",
+                "locale": "fr",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "fr",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Foie",
+                "locale": "fr",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovasculaire",
+                "locale": "fr",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Système nerveux central",
+                "locale": "fr",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Rénal",
+                "locale": "fr",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Pas de dysfonction organique pertinente selon le SOFA",
+            "locale": "fr",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).",
+            "locale": "fr",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratoire (PaO₂/FiO₂ 140)",
+                "locale": "fr",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "fr",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Foie",
+                "locale": "fr",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovasculaire",
+                "locale": "fr",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Système nerveux central",
+                "locale": "fr",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Rénal",
+                "locale": "fr",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dysfonction organique (SOFA ≥ 2)",
+            "locale": "fr",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).",
+            "locale": "fr",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratoire (PaO₂/FiO₂ 100)",
+                "locale": "fr",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "fr",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Foie",
+                "locale": "fr",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovasculaire",
+                "locale": "fr",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Système nerveux central",
+                "locale": "fr",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Rénal",
+                "locale": "fr",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dysfonction organique (SOFA ≥ 2)",
+            "locale": "fr",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).",
+            "locale": "fr",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratoire (PaO₂/FiO₂ 200)",
+                "locale": "fr",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulation",
+                "locale": "fr",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Foie",
+                "locale": "fr",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovasculaire",
+                "locale": "fr",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Système nerveux central",
+                "locale": "fr",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Rénal",
+                "locale": "fr",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dysfonction organique sévère (SOFA ≥ 10)",
+            "locale": "fr",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "Dans Sepsis-3, sepsis = infection avec augmentation aiguë de ≥ 2 points par rapport au SOFA de base (considéré comme 0 en l'absence de dysfonction préalable connue).",
+            "locale": "fr",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorisch (PaO₂/FiO₂ 452)",
+                "locale": "de",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gerinnung",
+                "locale": "de",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Leber",
+                "locale": "de",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Kardiovaskulär",
+                "locale": "de",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Zentrales Nervensystem",
+                "locale": "de",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "de",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Keine relevante Organdysfunktion nach SOFA",
+            "locale": "de",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).",
+            "locale": "de",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorisch (PaO₂/FiO₂ 140)",
+                "locale": "de",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gerinnung",
+                "locale": "de",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Leber",
+                "locale": "de",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Kardiovaskulär",
+                "locale": "de",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Zentrales Nervensystem",
+                "locale": "de",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "de",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Organdysfunktion (SOFA ≥ 2)",
+            "locale": "de",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).",
+            "locale": "de",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorisch (PaO₂/FiO₂ 100)",
+                "locale": "de",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gerinnung",
+                "locale": "de",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Leber",
+                "locale": "de",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Kardiovaskulär",
+                "locale": "de",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Zentrales Nervensystem",
+                "locale": "de",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "de",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Organdysfunktion (SOFA ≥ 2)",
+            "locale": "de",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).",
+            "locale": "de",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorisch (PaO₂/FiO₂ 200)",
+                "locale": "de",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gerinnung",
+                "locale": "de",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Leber",
+                "locale": "de",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Kardiovaskulär",
+                "locale": "de",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Zentrales Nervensystem",
+                "locale": "de",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renal",
+                "locale": "de",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Schwere Organdysfunktion (SOFA ≥ 10)",
+            "locale": "de",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).",
+            "locale": "de",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 452)",
+                "locale": "it",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulazione",
+                "locale": "it",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fegato",
+                "locale": "it",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascolare",
+                "locale": "it",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso centrale",
+                "locale": "it",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renale",
+                "locale": "it",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessuna disfunzione d'organo rilevante secondo SOFA",
+            "locale": "it",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).",
+            "locale": "it",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 140)",
+                "locale": "it",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulazione",
+                "locale": "it",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fegato",
+                "locale": "it",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascolare",
+                "locale": "it",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso centrale",
+                "locale": "it",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renale",
+                "locale": "it",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunzione d'organo (SOFA ≥ 2)",
+            "locale": "it",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).",
+            "locale": "it",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 100)",
+                "locale": "it",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulazione",
+                "locale": "it",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fegato",
+                "locale": "it",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascolare",
+                "locale": "it",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso centrale",
+                "locale": "it",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renale",
+                "locale": "it",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunzione d'organo (SOFA ≥ 2)",
+            "locale": "it",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).",
+            "locale": "it",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Respiratorio (PaO₂/FiO₂ 200)",
+                "locale": "it",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coagulazione",
+                "locale": "it",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Fegato",
+                "locale": "it",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Cardiovascolare",
+                "locale": "it",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Sistema nervoso centrale",
+                "locale": "it",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Renale",
+                "locale": "it",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disfunzione d'organo grave (SOFA ≥ 10)",
+            "locale": "it",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).",
+            "locale": "it",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التنفسي (PaO₂/FiO₂ ٤٥٢)",
+                "locale": "ar",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التخثر",
+                "locale": "ar",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الكبد",
+                "locale": "ar",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "القلب والأوعية الدموية",
+                "locale": "ar",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "الجهاز العصبي المركزي",
+                "locale": "ar",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "كلوي",
+                "locale": "ar",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا يوجد اختلال وظيفي عضوي مهم بحسب SOFA",
+            "locale": "ar",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "في Sepsis-3، الإنتان = عدوى مع زيادة حادة بمقدار ≥ 2 نقطة مقارنةً بـ SOFA الأساسي (ويُعتبر 0 إذا لم يكن هناك اختلال وظيفي سابق معروف).",
+            "locale": "ar",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التنفسي (PaO₂/FiO₂ ١٤٠)",
+                "locale": "ar",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التخثر",
+                "locale": "ar",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الكبد",
+                "locale": "ar",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "القلب والأوعية الدموية",
+                "locale": "ar",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "الجهاز العصبي المركزي",
+                "locale": "ar",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "كلوي",
+                "locale": "ar",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خلل وظيفي عضوي (SOFA ≥ 2)",
+            "locale": "ar",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "في Sepsis-3، الإنتان = عدوى مع زيادة حادة بمقدار ≥ 2 نقطة مقارنةً بـ SOFA الأساسي (ويُعتبر 0 إذا لم يكن هناك اختلال وظيفي سابق معروف).",
+            "locale": "ar",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التنفسي (PaO₂/FiO₂ ١٠٠)",
+                "locale": "ar",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التخثر",
+                "locale": "ar",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الكبد",
+                "locale": "ar",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "القلب والأوعية الدموية",
+                "locale": "ar",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "١",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "الجهاز العصبي المركزي",
+                "locale": "ar",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "كلوي",
+                "locale": "ar",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خلل وظيفي عضوي (SOFA ≥ 2)",
+            "locale": "ar",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "في Sepsis-3، الإنتان = عدوى مع زيادة حادة بمقدار ≥ 2 نقطة مقارنةً بـ SOFA الأساسي (ويُعتبر 0 إذا لم يكن هناك اختلال وظيفي سابق معروف).",
+            "locale": "ar",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التنفسي (PaO₂/FiO₂ ٢٠٠)",
+                "locale": "ar",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التخثر",
+                "locale": "ar",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الكبد",
+                "locale": "ar",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "القلب والأوعية الدموية",
+                "locale": "ar",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "الجهاز العصبي المركزي",
+                "locale": "ar",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "١",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "كلوي",
+                "locale": "ar",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خلل وظيفي عضوي شديد (SOFA ≥ 10)",
+            "locale": "ar",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "في Sepsis-3، الإنتان = عدوى مع زيادة حادة بمقدار ≥ 2 نقطة مقارنةً بـ SOFA الأساسي (ويُعتبر 0 إذا لم يكن هناك اختلال وظيفي سابق معروف).",
+            "locale": "ar",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 452）",
+                "locale": "zh",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝血",
+                "locale": "zh",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝脏",
+                "locale": "zh",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "zh",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神经系统",
+                "locale": "zh",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "肾脏",
+                "locale": "zh",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SOFA 评估无相关器官功能障碍",
+            "locale": "zh",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "在 Sepsis-3 中，脓毒症 = 感染并较基线 SOFA 急性增加 ≥ 2 分（如无已知既往功能障碍，则视为 0）。",
+            "locale": "zh",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 140）",
+                "locale": "zh",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝血",
+                "locale": "zh",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝脏",
+                "locale": "zh",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "zh",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神经系统",
+                "locale": "zh",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "肾脏",
+                "locale": "zh",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "器官功能障碍（SOFA ≥ 2）",
+            "locale": "zh",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "在 Sepsis-3 中，脓毒症 = 感染并较基线 SOFA 急性增加 ≥ 2 分（如无已知既往功能障碍，则视为 0）。",
+            "locale": "zh",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 100）",
+                "locale": "zh",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝血",
+                "locale": "zh",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝脏",
+                "locale": "zh",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "zh",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神经系统",
+                "locale": "zh",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "肾脏",
+                "locale": "zh",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "器官功能障碍（SOFA ≥ 2）",
+            "locale": "zh",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "在 Sepsis-3 中，脓毒症 = 感染并较基线 SOFA 急性增加 ≥ 2 分（如无已知既往功能障碍，则视为 0）。",
+            "locale": "zh",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 200）",
+                "locale": "zh",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝血",
+                "locale": "zh",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝脏",
+                "locale": "zh",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "zh",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神经系统",
+                "locale": "zh",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "肾脏",
+                "locale": "zh",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度器官功能障碍（SOFA ≥ 10）",
+            "locale": "zh",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "在 Sepsis-3 中，脓毒症 = 感染并较基线 SOFA 急性增加 ≥ 2 分（如无已知既往功能障碍，则视为 0）。",
+            "locale": "zh",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 452）",
+                "locale": "ja",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝固",
+                "locale": "ja",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝臓",
+                "locale": "ja",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "ja",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神経系",
+                "locale": "ja",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "腎臓",
+                "locale": "ja",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SOFA上、関連する臓器障害なし",
+            "locale": "ja",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "Sepsis-3では、敗血症 = 感染によりベースラインSOFAから急性に ≥ 2点上昇した状態（既知の既存機能障害がなければ0とみなす）。",
+            "locale": "ja",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 140）",
+                "locale": "ja",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝固",
+                "locale": "ja",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝臓",
+                "locale": "ja",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "ja",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神経系",
+                "locale": "ja",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "腎臓",
+                "locale": "ja",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臓器障害（SOFA ≥ 2）",
+            "locale": "ja",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Sepsis-3では、敗血症 = 感染によりベースラインSOFAから急性に ≥ 2点上昇した状態（既知の既存機能障害がなければ0とみなす）。",
+            "locale": "ja",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 100）",
+                "locale": "ja",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝固",
+                "locale": "ja",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝臓",
+                "locale": "ja",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "ja",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神経系",
+                "locale": "ja",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "腎臓",
+                "locale": "ja",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臓器障害（SOFA ≥ 2）",
+            "locale": "ja",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Sepsis-3では、敗血症 = 感染によりベースラインSOFAから急性に ≥ 2点上昇した状態（既知の既存機能障害がなければ0とみなす）。",
+            "locale": "ja",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "呼吸（PaO₂/FiO₂ 200）",
+                "locale": "ja",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "凝固",
+                "locale": "ja",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "肝臓",
+                "locale": "ja",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "心血管",
+                "locale": "ja",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "中枢神経系",
+                "locale": "ja",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "腎臓",
+                "locale": "ja",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度臓器障害（SOFA ≥ 10）",
+            "locale": "ja",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "Sepsis-3では、敗血症 = 感染によりベースラインSOFAから急性に ≥ 2点上昇した状態（既知の既存機能障害がなければ0とみなす）。",
+            "locale": "ja",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sem disfunção: P/F 452, exames normais, 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "श्वसन (PaO₂/FiO₂ 452)",
+                "locale": "hi",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  452
+                ]
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त का थक्का बनना",
+                "locale": "hi",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "यकृत",
+                "locale": "hi",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "हृदय-वाहिकीय",
+                "locale": "hi",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "केंद्रीय तंत्रिका तंत्र",
+                "locale": "hi",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "वृक्कीय",
+                "locale": "hi",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SOFA के अनुसार कोई प्रासंगिक अंग-विकार नहीं",
+            "locale": "hi",
+            "template": "documented-authored-5d538a10e205b2b97d9c"
+          },
+          "note": {
+            "text": "Sepsis-3 में, सेप्सिस = संक्रमण के साथ आधारभूत SOFA की तुलना में ≥ 2 अंकों की तीव्र वृद्धि (यदि कोई ज्ञात पूर्ववर्ती विकार न हो तो 0 माना जाता है)।",
+            "locale": "hi",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "P/F 140 sem suporte ventilatório: respiratório limitado a 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "श्वसन (PaO₂/FiO₂ 140)",
+                "locale": "hi",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  140
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त का थक्का बनना",
+                "locale": "hi",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "यकृत",
+                "locale": "hi",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "हृदय-वाहिकीय",
+                "locale": "hi",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "केंद्रीय तंत्रिका तंत्र",
+                "locale": "hi",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "वृक्कीय",
+                "locale": "hi",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अंग विकार (SOFA ≥ 2)",
+            "locale": "hi",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Sepsis-3 में, सेप्सिस = संक्रमण के साथ आधारभूत SOFA की तुलना में ≥ 2 अंकों की तीव्र वृद्धि (यदि कोई ज्ञात पूर्ववर्ती विकार न हो तो 0 माना जाता है)।",
+            "locale": "hi",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "P/F 100 em VM (3), PAM &lt; 70 (1), Cr 1,3 com diurese 400 (3): 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "श्वसन (PaO₂/FiO₂ 100)",
+                "locale": "hi",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  100
+                ]
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त का थक्का बनना",
+                "locale": "hi",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "यकृत",
+                "locale": "hi",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "हृदय-वाहिकीय",
+                "locale": "hi",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "1",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "केंद्रीय तंत्रिका तंत्र",
+                "locale": "hi",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "वृक्कीय",
+                "locale": "hi",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अंग विकार (SOFA ≥ 2)",
+            "locale": "hi",
+            "template": "documented-authored-c5e81d958976593874c5"
+          },
+          "note": {
+            "text": "Sepsis-3 में, सेप्सिस = संक्रमण के साथ आधारभूत SOFA की तुलना में ≥ 2 अंकों की तीव्र वृद्धि (यदि कोई ज्ञात पूर्ववर्ती विकार न हो तो 0 माना जाता है)।",
+            "locale": "hi",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico: P/F 200 (2), plaq 90 (2), bili 2,5 (2), nora ≤ 0,1 (3), GCS 13 (1), Cr 2,2 (2): 12",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "श्वसन (PaO₂/FiO₂ 200)",
+                "locale": "hi",
+                "template": "documented-authored-17c7143e643a74258e64",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त का थक्का बनना",
+                "locale": "hi",
+                "template": "documented-authored-47196c04bd954baf43de"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "यकृत",
+                "locale": "hi",
+                "template": "documented-authored-e69aaadbbd78108736d9"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "हृदय-वाहिकीय",
+                "locale": "hi",
+                "template": "documented-authored-36ea5749d747a14ec315"
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "केंद्रीय तंत्रिका तंत्र",
+                "locale": "hi",
+                "template": "documented-authored-f882c3b79e961eacb5a5"
+              },
+              "value": {
+                "text": "1",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "वृक्कीय",
+                "locale": "hi",
+                "template": "documented-authored-a4c2642c16ad4b8a66b1"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "numeric-primitive",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "गंभीर अंग-विकार (SOFA ≥ 10)",
+            "locale": "hi",
+            "template": "documented-authored-c7f586003a46f56281b5"
+          },
+          "note": {
+            "text": "Sepsis-3 में, सेप्सिस = संक्रमण के साथ आधारभूत SOFA की तुलना में ≥ 2 अंकों की तीव्र वृद्धि (यदि कोई ज्ञात पूर्ववर्ती विकार न हो तो 0 माना जाता है)।",
+            "locale": "hi",
+            "template": "documented-authored-c5e23e23bf3243e57992"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

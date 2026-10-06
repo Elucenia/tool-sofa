@@ -128,3 +128,71 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Nessuna disfunzione d'organo rilevante secondo SOFA
+
+| Dettagli del risultato | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 452) | 0 |
+| Coagulazione | 0 |
+| Fegato | 0 |
+| Cardiovascolare | 0 |
+| Sistema nervoso centrale | 0 |
+| Renale | 0 |
+
+Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).
+
+
+### 2
+
+Disfunzione d'organo (SOFA ≥ 2)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 140) | 2 |
+| Coagulazione | 0 |
+| Fegato | 0 |
+| Cardiovascolare | 0 |
+| Sistema nervoso centrale | 0 |
+| Renale | 0 |
+
+Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).
+
+
+### 3
+
+Disfunzione d'organo (SOFA ≥ 2)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 100) | 3 |
+| Coagulazione | 0 |
+| Fegato | 0 |
+| Cardiovascolare | 1 |
+| Sistema nervoso centrale | 0 |
+| Renale | 3 |
+
+Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).
+
+
+### 4
+
+Disfunzione d'organo grave (SOFA ≥ 10)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 200) | 2 |
+| Coagulazione | 2 |
+| Fegato | 2 |
+| Cardiovascolare | 3 |
+| Sistema nervoso centrale | 1 |
+| Renale | 2 |
+
+Nel Sepsis-3, sepsi = infezione con aumento acuto di ≥ 2 punti rispetto al SOFA basale (considerato 0 se non vi è disfunzione preesistente nota).
+

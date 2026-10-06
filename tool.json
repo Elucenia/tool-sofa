@@ -393,7 +393,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "SOFA/Vincent 1996:6 sistemas 0–4, total 0–24; limiares clássicos; sem SOFA 2",
-    "implementationVersion": "sofa@native-2026-10-03+eed7d8c8e9ab",
+    "implementationVersion": "sofa@native-2026-10-05+3c7ee3b1f1a5",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8844239/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -741,7 +741,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10",
+      "implementationHash": "3c7ee3b1f1a5e22debb8a98db7466c4e9f854bfbeb842f5ea67081264631fb10",
       "sourceAnnotationAmendment": {
         "receipt": "reports/review-20261003/eight-organ-functional-source-corrections-candidate-final26-r4-r2.json",
         "sourceReviewSha256": "e1a3a85edb2d38e880b320918a3738586221e4c5e7041bc83b51ec7b584385cc",
@@ -862,8 +862,34 @@
           "professionalLanguageApproval": "not-performed",
           "sourceRightsApproval": "not-performed",
           "scope": "Declarative technical rebinding only. Source access scope, source proofs and original failure/test histories remain unchanged."
+        },
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "sofa@native-2026-10-03+eed7d8c8e9ab",
+          "previousImplementationHash": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10",
+          "implementationHash": "3c7ee3b1f1a5e22debb8a98db7466c4e9f854bfbeb842f5ea67081264631fb10",
+          "scientificBodySha256": "9da00a61002ee53ece9ac4bd01547924822660f0f87575e3755d46486281e2d9",
+          "metadataContractHash": "45ea5db4f637d4e56c856573cdbe32e21e4132f37555734ad7c4ae5d849b4283",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
         }
-      ]
+      ],
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      }
     },
     "limits": "SOFA clássico: descreve disfunção orgânica em adultos criticamente enfermos; registre o momento da avaliação e a função prévia dos órgãos. Na definição Sepsis-3 de 2016, a variação aguda de pelo menos 2 pontos deve decorrer de infecção; o basal só pode ser presumido zero quando não há disfunção orgânica prévia conhecida. O total isolado não diagnostica infecção nem fornece uma probabilidade individual de morte. Não extrapole a classificação clássica para crianças. As doses vasoativas são em µg/kg/min, administradas por pelo menos 1 hora; a diurese se refere a 24 horas. A Tabela 1 de Sepsis-3 (2016), adaptada de Vincent 1996, imprime bilirrubina > 12,0 mg/dL, creatinina > 5,0 mg/dL e dopamina < 5 ou 5,1–15 µg/kg/min. A tabela integral de 1996 não foi obtida nesta revisão. As diferenças e lacunas nesses limites não foram adjudicadas; a conferência numérica usou apenas valores inequívocos e pontos cardiovasculares já selecionados.",
     "limitsEvidence": {
@@ -924,20 +950,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/sofa/calculator.js",
-    "bytes": 6179,
-    "sha256": "eed7d8c8e9ab496fe9c0486a25dbd941ab4bc16c1c3f15e081750972b8e66b10"
+    "bytes": 6384,
+    "sha256": "3c7ee3b1f1a5e22debb8a98db7466c4e9f854bfbeb842f5ea67081264631fb10"
   },
-  "sourceToolSha256": "8342857bfbe409beff656001f94354a26b3247da7db1ffb00504e98bba54cbbe",
+  "sourceToolSha256": "8823ea0d8042675bc8c9596fc380f198e6d076325642cab77ce2e2d5d086fe76",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "7cd9e1be8b0ec918c70ceb7556c57625431fbb814ae405920a53801aff2a675c",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "7cd9e1be8b0ec918c70ceb7556c57625431fbb814ae405920a53801aff2a675c",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

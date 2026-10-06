@@ -128,3 +128,71 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Sin disfunción orgánica relevante según SOFA
+
+| Detalles del resultado | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 452) | 0 |
+| Coagulación | 0 |
+| Hígado | 0 |
+| Cardiovascular | 0 |
+| Sistema nervioso central | 0 |
+| Renal | 0 |
+
+En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).
+
+
+### 2
+
+Disfunción orgánica (SOFA ≥ 2)
+
+| Detalles del resultado | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 140) | 2 |
+| Coagulación | 0 |
+| Hígado | 0 |
+| Cardiovascular | 0 |
+| Sistema nervioso central | 0 |
+| Renal | 0 |
+
+En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).
+
+
+### 3
+
+Disfunción orgánica (SOFA ≥ 2)
+
+| Detalles del resultado | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 100) | 3 |
+| Coagulación | 0 |
+| Hígado | 0 |
+| Cardiovascular | 1 |
+| Sistema nervioso central | 0 |
+| Renal | 3 |
+
+En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).
+
+
+### 4
+
+Disfunción orgánica grave (SOFA ≥ 10)
+
+| Detalles del resultado | |
+| --- | --- |
+| Respiratorio (PaO₂/FiO₂ 200) | 2 |
+| Coagulación | 2 |
+| Hígado | 2 |
+| Cardiovascular | 3 |
+| Sistema nervioso central | 1 |
+| Renal | 2 |
+
+En Sepsis-3, sepsis = infección con aumento agudo de ≥ 2 puntos respecto del SOFA basal (considerado 0 si no hay disfunción previa conocida).
+

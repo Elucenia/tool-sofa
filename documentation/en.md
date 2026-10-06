@@ -128,3 +128,71 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No relevant organ dysfunction by SOFA
+
+| Result details | |
+| --- | --- |
+| Respiratory (PaO₂/FiO₂ 452) | 0 |
+| Coagulation | 0 |
+| Liver | 0 |
+| Cardiovascular | 0 |
+| Central nervous system | 0 |
+| Renal | 0 |
+
+In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).
+
+
+### 2
+
+Organ dysfunction (SOFA ≥ 2)
+
+| Result details | |
+| --- | --- |
+| Respiratory (PaO₂/FiO₂ 140) | 2 |
+| Coagulation | 0 |
+| Liver | 0 |
+| Cardiovascular | 0 |
+| Central nervous system | 0 |
+| Renal | 0 |
+
+In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).
+
+
+### 3
+
+Organ dysfunction (SOFA ≥ 2)
+
+| Result details | |
+| --- | --- |
+| Respiratory (PaO₂/FiO₂ 100) | 3 |
+| Coagulation | 0 |
+| Liver | 0 |
+| Cardiovascular | 1 |
+| Central nervous system | 0 |
+| Renal | 3 |
+
+In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).
+
+
+### 4
+
+Severe organ dysfunction (SOFA ≥ 10)
+
+| Result details | |
+| --- | --- |
+| Respiratory (PaO₂/FiO₂ 200) | 2 |
+| Coagulation | 2 |
+| Liver | 2 |
+| Cardiovascular | 3 |
+| Central nervous system | 1 |
+| Renal | 2 |
+
+In Sepsis-3, sepsis = infection with acute increase of ≥ 2 points relative to baseline SOFA (considered 0 if there is no known prior dysfunction).
+

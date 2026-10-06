@@ -128,3 +128,71 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sem disfunção orgânica relevante pelo SOFA
+
+| Detalhes do resultado | |
+| --- | --- |
+| Respiratório (PaO₂/FiO₂ 452) | 0 |
+| Coagulação | 0 |
+| Fígado | 0 |
+| Cardiovascular | 0 |
+| Sistema nervoso central | 0 |
+| Renal | 0 |
+
+Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).
+
+
+### 2
+
+Disfunção orgânica (SOFA ≥ 2)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Respiratório (PaO₂/FiO₂ 140) | 2 |
+| Coagulação | 0 |
+| Fígado | 0 |
+| Cardiovascular | 0 |
+| Sistema nervoso central | 0 |
+| Renal | 0 |
+
+Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).
+
+
+### 3
+
+Disfunção orgânica (SOFA ≥ 2)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Respiratório (PaO₂/FiO₂ 100) | 3 |
+| Coagulação | 0 |
+| Fígado | 0 |
+| Cardiovascular | 1 |
+| Sistema nervoso central | 0 |
+| Renal | 3 |
+
+Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).
+
+
+### 4
+
+Disfunção orgânica grave (SOFA ≥ 10)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Respiratório (PaO₂/FiO₂ 200) | 2 |
+| Coagulação | 2 |
+| Fígado | 2 |
+| Cardiovascular | 3 |
+| Sistema nervoso central | 1 |
+| Renal | 2 |
+
+Na Sepsis-3, sepse = infecção com aumento agudo de ≥ 2 pontos em relação ao SOFA basal (considerado 0 se não houver disfunção prévia conhecida).
+

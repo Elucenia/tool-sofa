@@ -128,3 +128,71 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Keine relevante Organdysfunktion nach SOFA
+
+| Ergebnisdetails | |
+| --- | --- |
+| Respiratorisch (PaO₂/FiO₂ 452) | 0 |
+| Gerinnung | 0 |
+| Leber | 0 |
+| Kardiovaskulär | 0 |
+| Zentrales Nervensystem | 0 |
+| Renal | 0 |
+
+In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).
+
+
+### 2
+
+Organdysfunktion (SOFA ≥ 2)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Respiratorisch (PaO₂/FiO₂ 140) | 2 |
+| Gerinnung | 0 |
+| Leber | 0 |
+| Kardiovaskulär | 0 |
+| Zentrales Nervensystem | 0 |
+| Renal | 0 |
+
+In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).
+
+
+### 3
+
+Organdysfunktion (SOFA ≥ 2)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Respiratorisch (PaO₂/FiO₂ 100) | 3 |
+| Gerinnung | 0 |
+| Leber | 0 |
+| Kardiovaskulär | 1 |
+| Zentrales Nervensystem | 0 |
+| Renal | 3 |
+
+In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).
+
+
+### 4
+
+Schwere Organdysfunktion (SOFA ≥ 10)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Respiratorisch (PaO₂/FiO₂ 200) | 2 |
+| Gerinnung | 2 |
+| Leber | 2 |
+| Kardiovaskulär | 3 |
+| Zentrales Nervensystem | 1 |
+| Renal | 2 |
+
+In Sepsis-3 ist Sepsis = Infektion mit einem akuten Anstieg von ≥ 2 Punkten gegenüber dem Basis-SOFA (als 0 angesehen, wenn keine bekannte vorbestehende Dysfunktion vorliegt).
+
